@@ -1,0 +1,172 @@
+<html lang="en">
+    
+    <head>
+        <link rel="stylesheet" href="/CSS/angular/angular-material.min.css">
+        <link rel="stylesheet" href="/CSS/toolbar/toolbar.css">
+        <link rel="stylesheet" href="/CSS/bootstrap/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="/CSS/bootstrap/bootstrap.min.css">
+        
+    </head>
+
+    <body ng-app="comms-coll" ng-cloak>
+        
+        <script src="/JS/angular/angular.min.js"></script>
+        <script src="/JS/angular/angular-animate.min.js"></script>
+        <script src="/JS/angular/angular-aria.min.js"></script>
+        <script src="/JS/angular/angular-material.min.js"></script>
+        <script src="/JS/angular/angular-messages.min.js"></script>
+        <script src=/JS/bootstrap/bootstrap.min.js></script>
+
+        <script type="text/javascript">
+            
+        var app = angular.module('comms-coll',['ngMaterial']);
+            
+        app.controller('ToolbarCtrl1', function($scope){
+        
+//        $scope.CheckFunc($scope){
+//            
+            $scope.title='COMMS-COLL';
+//
+//        }
+            
+//            $scope.clickMenu = function(){
+//                
+//            }
+        });
+
+  
+        
+            
+//        app.controller('AppCtrl', function($scope){
+//            $scope.test = 'ssssss';
+//
+//        });
+            
+//        app.controller('ToolbarCtrl2',showButtonMenu);
+//                   
+//            function showButtonMenu($mdPanel) {
+//              this._mdPanel = $mdPanel;
+//
+//              this.desserts = [
+//                'Apple Pie',
+//                'Donut',
+//                'Fudge',
+//                'Cupcake',
+//                'Ice Cream',
+//                'Tiramisu'
+//              ];
+//
+//              this.selected = {favoriteDessert: 'Donut'};
+//              this.disableParentScroll = false;
+//            };
+   
+            
+            
+//        showButtonMenu.prototype.showMenu = function(ev) {
+//          var position = this._mdPanel.newPanelPosition()
+//              .relativeTo('.demo-menu-open-button')
+//              .addPanelPosition(this._mdPanel.xPosition.ALIGN_START, this._mdPanel.yPosition.BELOW);
+//
+//              var config = {
+//                attachTo: angular.element(document.body),
+//                controller: PanelMenuCtrl,
+//                controllerAs: 'ctrl',
+//                template:
+//                    '<div class="demo-menu-example" ' +
+//                    '     aria-label="Select your favorite dessert." ' +
+//                    '     role="listbox">' +
+//                    '  <div class="demo-menu-item" ' +
+//                    '       ng-class="{selected : dessert == ctrl.favoriteDessert}" ' +
+//                    '       aria-selected="{{dessert == ctrl.favoriteDessert}}" ' +
+//                    '       tabindex="-1" ' +
+//                    '       role="option" ' +
+//                    '       ng-repeat="dessert in ctrl.desserts" ' +
+//                    '       ng-click="ctrl.selectDessert(dessert)"' +
+//                    '       ng-keydown="ctrl.onKeydown($event, dessert)">' +
+//                    '    {{ dessert }} ' +
+//                    '  </div>' +
+//                    '</div>',
+//                panelClass: 'demo-menu-example',
+//                position: position,
+//                locals: {
+//                  'selected': this.selected,
+//                  'desserts': this.desserts
+//                },
+//                openFrom: ev,
+//                clickOutsideToClose: true,
+//                escapeToClose: true,
+//                focusOnOpen: false,
+//                zIndex: 2
+//              };
+//
+//              this._mdPanel.open(config);
+//            };
+//
+//            
+//            function PanelMenuCtrl(mdPanelRef, $timeout) {
+//              this._mdPanelRef = mdPanelRef;
+//              this.favoriteDessert = this.selected.favoriteDessert;
+//              $timeout(function() {
+//                var selected = document.querySelector('.demo-menu-item.selected');
+//                if (selected) {
+//                  angular.element(selected).focus();
+//                } else {
+//                  angular.element(document.querySelectorAll('.demo-menu-item')[0]).focus();
+//                }
+//              });
+//            }
+//
+//
+//            PanelMenuCtrl.prototype.selectDessert = function(dessert) {
+//              this.selected.favoriteDessert = dessert;
+//              this._mdPanelRef && this._mdPanelRef.close().then(function() {
+//                angular.element(document.querySelector('.demo-menu-open-button')).focus();
+//              });
+//            };
+
+            
+            
+
+
+        </script>
+        
+        
+        <div id="toolbars" layout="column" style="height:10%;" ng-controller="ToolbarCtrl1" ng-cloak>
+            
+            <md-toolbar md-scroll-shrink ng-if="true" style="position:fixed;">
+                <div class="md-toolbar-tools" id="innertoolbar" >
+                    <h3>
+                        <span>
+                            {{title}}
+                        </span>
+                    </h3>
+                    
+                    <span flex></span>
+
+                    
+                <div class="demo-md-panel-content">
+<!--                         Single button -->
+                    <md-button class="md-primary md-raised demo-menu-open-button" ng-click="clickMenu()">
+                    Select Menu
+                    </md-button>
+                    
+                </div>
+                    
+                </div>
+
+            </md-toolbar>
+                            
+        </div>
+        
+    
+        
+        <div>   
+                        
+            <md-button md-no-ink class="md-primary">Primary (md-noink)</md-button>
+            <md-button class="md-raised md-primary">Primary</md-button>
+
+        </div>
+
+    </body>
+
+</html>
