@@ -1,0 +1,16 @@
+.sideNavBar{
+    
+    background-color: white;
+    height: 50%;
+    width: 10%;
+    align-self: flex-start;
+}
+
+.SidePageContent{
+      background-color: white;
+    height: 50%;
+    width: 10%;
+    align-self: flex-start;
+    position: inherit; 
+    
+}
