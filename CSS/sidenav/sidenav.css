@@ -2,8 +2,8 @@
     
     background-color: white;
     height: 80%;
-    width: 100%;
-    align-self: flex-start;
+/*    width: 100%;*/
+/*    align-self: flex-start;*/
 }
 
 /*
@@ -19,7 +19,28 @@
 .SideNav{
     
     position: relative;
-    background-color: yellow;
+    background-color: white;
     left:1%;
+    
 /*    width: 90%;*/
+}
+
+.horizontalBlocks {
+/*    margin-left: -20px;*/
+/*    margin-top: 50px;*/
+}
+
+
+div.horizontalBlocks{
+    
+    position: relative;
+    left:2%;
+}
+
+.horizontalBlocks .md-padding{
+    float: left;
+    min-width: 350px; 
+/*    margin: 10px;*/
+   
+    
 }

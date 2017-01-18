@@ -12,7 +12,7 @@
 <!--        http://keenthemes.com/preview/metronic/theme/admin_4/page_general_search_2.html?query=-->
     </head>
 
-    <body ng-app="comms-coll" ng-cloak style="background-color:#E9ECF3">
+    <body ng-app="comms-coll" style="background-color:#E9ECF3;height: 100%;" >
         
           <script src="/JS/angular/angular.min.js"></script>
           <script src="/JS/angular/angular-animate.min.js"></script>
@@ -127,14 +127,14 @@
                 
                 <div class="md-toolbar-tools" id="innertoolbar">
                     
-<!--                    <img src="/RESOURCES/Cyient-logo.png" alt="Cyient" >-->
+                    <img src="/RESOURCES/Cyient-logo.png" alt="Cyient" >
                     &nbsp;
                     &nbsp;
-                    <h3 style="color:#5995C8">
+                    <h4 style="color:#5995C8">
                         <span>
-                          COMMS COLLABORATION
+                          COMMS-COLLABORATION
                         </span>
-                    </h3>                    
+                    </h4>                    
                     <span flex></span>
                     
                     <div class="demo-md-panel-content" layout="row" layout-align="center center">
@@ -185,61 +185,127 @@
         
         
         
-        <div id="LoadSideNav" class="SideNav" style="width:18%;" layout="row" layout-align="center center"> 
+        <div class="outerDiv" layout="row">
+                 
+                   
+            <div id="LoadSideNav" class="SideNav" style="width:15%;" layout="column" layout-align="center center"> 
+
+            </div>
+                     
+                <div class="horizontalBlocks">
+                  
+                    <div style="position: relative;left:1%;">
+                    
+                        <h3 style="color:#6A708D;">
+                           Dashboard <small> Statistics and Recent events </small>
+                        </h3>
+
+                    </div>
+<!--                    <div class="md-padding" style="position:relative;background-color:#3598DC;">-->
+                    <div class="md-padding" style="position:relative";>
+                        
+                         
+                         <md-content layout-xs="column" layout="column" style="min-height:14%;background-color:#3598DC;" layout-align="left left">
+                           
+                           <span>
+<!--                          <h2 style="color:#2BB4C0;margin-left:20px;">-->
+                           <h2 style="color:white;margin-left:20px;">
+                                                        
+                            7890
+                           
+                           </h2>
+<!--                           <h5 style="color:#ADB7BE;margin-left:20px;">-->
+                            <h5 style="color:white;margin-left:20px;">
+                               <b>
+                                TOTAL TICKETS
+                               </b>                        
+                            </h5> 
+                           </span>
+                        </md-content>
+                    </div>
+
+                    <div class="md-padding" style="position:relative;">
+<!--                    <div class="md-padding" style="position:relative;background-color:#E7505A;">-->
+                       
+                         <md-content layout-xs="column" layout="column" style="min-height:14%;background-color:#E7505A;"  layout-align="left left">
+                            <span>
+<!--                            <h2 style="color:#F36A5A;margin-left:20px;">-->
+                            <h2 style="color:white;margin-left:20px;">
+
+                            1349
+                            </h2>
+
+<!--                              <h5 style="color:#ADB7BE;margin-left:20px;">-->
+                            <h5 style="color:white;margin-left:20px;">
+                                 <b>
+                                TOTAL CLOSED
+                                 </b>
+                            </h5>
+
+                            </span>
+                        </md-content>
+                    </div>
+
+<!--                    <div class="md-padding" style="position:relative;background-color:#32C5D2;">-->
+                    <div class="md-padding" style="position:relative;">
+                        
+                         <md-content layout-xs="column" layout="column" style="min-height:14%;background-color:#32C5D2;" layout-align="left left">
+                              
+                            <span>
+                                
+                              
+<!--                            <h2 style="color:#5C9BD1;margin-left:20px;">-->
+                            <h2 style="color:white;margin-left:20px;">        
+                            576
+                            </h2>
+
+<!--                            <h5 style="color:#ADB7BE;margin-left:20px;">-->
+                            <h5 style="color:white;margin-left:20px;">
+                                <b>
+                                INPRORGESS
+                                </b>
+                            </h5>
+                            </span>
+                             
+                               <img src="/RESOURCES/work_emotions/tp-1.png" height="42" width="42" alt="Cyient" layout-align="right right">
+                         </md-content>
+                    </div>
+                    
+
+<!--                   <div class="md-padding" style="position:relative;background-color:#62487C;">-->
+                   <div class="md-padding" style="position:relative;">
+                        <md-content layout-xs="column" layout="column" style="min-height:14%;background-color:#62487C;" layout-align="left left">
+                            <span>
+<!--                            <h2 style="color:#8D7DAD;margin-left:20px;">-->
+                            <h2 style="color:white;margin-left:20px;">
+                                276
+                                
+                            </h2>
+                                                        
+<!--                            <h5 style="color:#ADB7BE;margin-left:20px;">-->
+                            <h5 style="color:white;margin-left:20px;">
+                                <b>
+                                IN LINE WITH SLA
+                                </b>
+                            </h5>
+
+                             </span>
+
+                         </md-content>
+                    </div>
+
+                </div>           
             
         </div>
         
-        
-        <div id="wrapper" style="position:relative;left:12%;bottom:77%;">
-        
-            <div style="float:left;width:15%;position:relative;left:10%;bottom:70%;">
-                
-                <md-content class="md-padding" layout-xs="row" layout="row" style="min-height:15%;">
-                    
-                    <h2 style="color:#2BB4C0;">
-                    
-                    7890
-                    </h2>
-                </md-content>
-            </div>
-            
-            <div style="float:left;width:15%;position:relative;left:15%;bottom:70%;">
-                 <md-content class="md-padding" layout-xs="row" layout="row" style="min-height:15%;">
-                    <h2 style="color:#F36A5A;">
-
-                    1349
-                    </h2>
-                </md-content>
-            </div>
-
-            <div style="float:left;width:15%;position:relative;left:20%;bottom:70%;">
-                 <md-content class="md-padding" layout-xs="row" layout="row" style="min-height:15%;">
-                    <h2 style="color:#5C9BD1;">
-                    
-                    576
-                    </h2>
-                 </md-content>
-            </div>
-            
-            <div style="float:left;width:15%;position:relative;left:25%;bottom:70%;">
-                 <md-content class="md-padding" layout-xs="row" layout="row" style="min-height:15%;">
-                    <h2 style="color:#8D7DAD;">
-                    
-                    276
-                    </h2>
-                 </md-content>
-            </div>
-            
-        </div>
-
-      
     </body>
     
     <br>
     <br>
     <br>
     <br>
-    
+    <br>
+
      <footer>
         <div layout="row" layout-align="center center">
             <h5 style="color:#3B3F51"> 2017 © Cyient Ltd   | </h5>  <h5 style="color:#3B3F51">  &nbsp; Comms-dev team ! </h5>
